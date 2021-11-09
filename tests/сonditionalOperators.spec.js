@@ -39,9 +39,14 @@ describe('On Multiplication or sum', () => {
             expect(sumOfPosNum(-3, 2,5)).to.equal(7);
         });
         it('should sum only pos', () => {
-            expect(sumOfPosNum(-3, -2,5)).to.equal();
+            expect(sumOfPosNum(-3, -2,-5)).to.equal(0);
         });
-
+        it('should sum only pos', () => {
+            expect(sumOfPosNum(3, -2,-5)).to.equal(0);
+        });
+        it('should sum only pos', () => {
+            expect(sumOfPosNum(3, 2,5)).to.equal(10);
+        });
     });
     
     

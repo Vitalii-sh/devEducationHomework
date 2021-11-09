@@ -26,7 +26,7 @@ if ((x == 0) &&(y == 0)) {
 
 // Найти суммы только положительных из трех чисел
 function sumOfPosNum(firstNumber,secondNumber,thirdNumber) {
-let sum;
+let sum = 0;
 if ((firstNumber >= 0) & (secondNumber >= 0) & (thirdNumber >= 0)) {
   sum = firstNumber + secondNumber + thirdNumber;
 } else if ((firstNumber < 0) & (secondNumber >= 0) & (thirdNumber >= 0)) {
