@@ -10,15 +10,15 @@ function getCookingTime(number) {
 console.log(getCookingTime(11));
 
 function getNumber(arr) {
-  const newEvenArr = [];
+  const newArr = [];
 
   if (Array.isArray(arr)) {
-    newEvenArr.push(arr.filter((element) => element % 2 === 0));
-    newEvenArr.push(arr.filter((element) => element % 2 !== 0));
+    newArr.push(arr.filter((element) => element % 2 === 0));
+    newArr.push(arr.filter((element) => element % 2 !== 0));
   } else {
     return console.log("Not array!");
   }
-  return newEvenArr;
+  return newArr;
 }
 Numbers = [1, 5, 7, 9, 15, 19, 777, -15, -11, 4, 9, 23, -17]; //returns 4
 Numbers2 = [0, 2, 8, -4, 0, -122, 13, -4, 28, 12]; //returns 13
