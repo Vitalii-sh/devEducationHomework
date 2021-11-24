@@ -27,7 +27,12 @@ class LinkedList {
     this.length++;
     return this;
   }
-
+  
+appendArr(data) {
+  data.forEach(element => {
+    this.append(element)
+  });
+}
   prepend(data) {
     const node = new Node(data, this.head);
 
@@ -101,10 +106,10 @@ class LinkedList {
   }
 }
 const list = new LinkedList();
-
+list.appendArr([1,2,3])
 // list.append(1);
 // list.append(2);
 // list.append(3);
 // list.remove(3);
 // list.remove(2);
-// console.log(list);
+console.log(list);
